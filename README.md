@@ -2,13 +2,15 @@
  * @Author: matiastang
  * @Date: 2025-01-16 18:13:19
  * @LastEditors: matiastang
- * @LastEditTime: 2025-01-18 16:08:16
+ * @LastEditTime: 2025-01-18 17:33:39
  * @FilePath: /bingwallpaper/README.md
  * @Description: README
 -->
 # bingwallpaper
 
 接口自定义策略转发到`Bing Wallpaper`壁纸接口。
+
+部署后的效果，如：[获取今日微软bing壁纸](https://api.tdytech.cn/api/wallpaper/bing/last)
 
 ## 环境
 
@@ -69,6 +71,7 @@ $ pip3 freeze > requirements.txt
 * 引入`gunicorn`优化请求并发性能
 * 引入`requests`支持请求
 
+**注意** 这个需求比较小，这里的`redis`未使用链接池。
 **注意** 部署时有些库不是必须`install`的，可以省略，如`gunicorn`。`gunicorn`只是用来多进程启动的，如果不需要则可以忽略，需要时再添加也可以。
 
 ## 启动
@@ -399,11 +402,17 @@ $ docker build -t bingwallpaper --network=host .
 
 ## 版本说明
 
+### v1.0.1
+
+- 更新说明文档，添加项目部署后的测试链接。
+
 ### v1.0.0
 
 - 实现接口转发到微软必应最新背景图功能。
 
 ## 参考
+
+[获取今日微软bing壁纸](https://api.tdytech.cn/api/wallpaper/bing/last)
 
 [获取微软必应每日背景图](https://matiastang.github.io/article/y7liklme.html)
 
@@ -414,3 +423,5 @@ $ docker build -t bingwallpaper --network=host .
 [Python 格式校验](https://matiastang.github.io/article/y8faf61c.html)
 
 [整理头文件](https://matiastang.github.io/article/94w8v0n3.html)
+
+[bing](https://cn.bing.com)
