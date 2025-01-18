@@ -1,0 +1,18 @@
+[flake8]
+# 忽略 E711 错误
+ignore = E711
+# 设置最大行长度为 120 字符
+max-line-length = 120
+# 检查所有类型的错误和警告
+select = E, W, F, C
+# 在忽略列表中添加更多特定错误
+# F841 未使用的变量
+extend-ignore = F841
+# 排除以下目录或文件
+exclude = 
+    .venv/
+    build/
+    dist/
+    docs/_build/
+    *.log
+    migrations/*.py
