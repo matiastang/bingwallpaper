@@ -2,13 +2,13 @@
  * @Author: matiastang
  * @Date: 2025-01-16 18:13:19
  * @LastEditors: matiastang
- * @LastEditTime: 2025-01-18 17:33:39
+ * @LastEditTime: 2025-01-21 16:01:20
  * @FilePath: /bingwallpaper/README.md
  * @Description: README
 -->
 # bingwallpaper
 
-接口自定义策略转发到`Bing Wallpaper`壁纸接口。
+用`FastAPI`实现一个接口，使用自定义策略重定向到`Bing Wallpaper`的壁纸图片地址。可以用来追随`Bing Wallpaper`的壁纸更新。
 
 部署后的效果，如：[获取今日微软bing壁纸](https://api.tdytech.cn/api/wallpaper/bing/last)
 
@@ -401,6 +401,10 @@ $ docker build -t bingwallpaper --network=host .
 ```
 
 ## 版本说明
+
+### v1.0.2
+
+- 更新说明文档。
 
 ### v1.0.1
 
