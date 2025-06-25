@@ -2,7 +2,7 @@
  * @Author: matiastang
  * @Date: 2025-01-16 18:13:19
  * @LastEditors: matiastang
- * @LastEditTime: 2025-01-21 16:01:20
+ * @LastEditTime: 2025-06-25 16:04:09
  * @FilePath: /bingwallpaper/README.md
  * @Description: README
 -->
@@ -401,6 +401,11 @@ $ docker build -t bingwallpaper --network=host .
 ```
 
 ## 版本说明
+
+### v1.0.3
+
+- 更新版本号为v1.0.3
+- 新增`/random/{n}`接口，随机返回最近`n`张壁纸种的一张
 
 ### v1.0.2
 
